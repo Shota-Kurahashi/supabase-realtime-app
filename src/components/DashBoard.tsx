@@ -31,7 +31,7 @@ export const DashBoard: FC = () => {
         className="my-6 h-6 w-6 cursor-pointer text-blue-500"
         onClick={signOut}
       />
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
         <div className="flex flex-col items-center">
           <ErrorBoundary
             fallback={
@@ -54,7 +54,7 @@ export const DashBoard: FC = () => {
             </Suspense>
           </ErrorBoundary>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="hidden flex-col items-center md:flex">
           <ErrorBoundary
             fallback={
               <ExclamationCircleIcon className="my-5 h-10 w-10 text-pink-500" />
