@@ -7,7 +7,7 @@ import useStore from "../store";
 import { Spinner } from "./Spinner";
 import { UserProfile } from "./UserProfile";
 import { Notification } from "./Notification";
-// import { Feed } from "./Feed";
+import { Feed } from "./Feed";
 
 export const DashBoard: FC = () => {
   const queryClient = useQueryClient();
@@ -49,9 +49,9 @@ export const DashBoard: FC = () => {
               <ExclamationCircleIcon className="my-5 h-10 w-10 text-pink-500" />
             }
           >
-            {/* <Suspense fallback={<Spinner />}>
+            <Suspense fallback={<Spinner />}>
               <Feed />
-            </Suspense> */}
+            </Suspense>
           </ErrorBoundary>
         </div>
         <div className="flex flex-col items-center">
